@@ -1,10 +1,10 @@
 var gProjects;
 var gNames = ['MINES SWEEPER', 'Guess The Breed','Per Pixel'];
-var gTitles = ['Lets try to solve the whole board without any explotion !','Can you guess which breed of dog is it ?','Whe your imagination became the reality'];
+var gTitles = ['Lets try to solve the whole board without any explotion !','Can you guess which breed of dog is it only by the picture ?','Whe your imagination became the reality'];
 var gDescs = ['This game have three lvls, each level have a diffrent numbers of bumbs, your targer is to solve all the board. Each box hides diffrent value which will appear only on click. you have 3 lives, 3 safe clicks, 3 hints. to restart press the Smiley Icon... GOOD LUCK !','try to guess all the breeds of dogs that appears in the game, we recommands to allow volume to have maximum effect, ENJOY !','Try to get your dream on paper, how exacly would it looks like? here you can see someone dream, on the exact same pxl, same color, became his reality.'];
-var gUrls = ['https://michaelaharoni.github.io/FirstProject/','https://michaelaharoni.github.io/FirstProject/'];
+var gUrls = ['https://michaelaharoni.github.io/FirstProject/','https://michaelaharoni.github.io/guess-the-breed/','https://michaelaharoni.github.io/perPixel/','https://michaelaharoni.github.io/Touch-Nums/'];
 var gPublishedAts = ['1637754109000','464646433'];
-var gLabels = ['Game ,Matrixes', 'Dogs, Animals Games'];
+var gLabels = ['Game ,Matrixes', 'Dogs, Animals Games','site ,web'];
 
 $(init);
 
@@ -13,11 +13,11 @@ function init() {
     renderHtmlModels();
     renderProjects();
     renderObjDetails();
-    $('.btn-primary').click(sendMail);
+    $('.contact.btn-primary').click(sendMail);
 }
 
 function sendMail(){
-var $mail = $('.mail').val();
+// var $mail = $('.mail').val();
 var $subject = $('.subject').val();
 var $message = $('.message').val();
 window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=michaelaharoni001@gmail.com&su=${$subject}&b
@@ -42,7 +42,7 @@ function renderProjects() {
     for (var i = 0; i < gProjects.length; i++) {
         strHTML += `<div class="col-md-4 col-sm-6 portfolio-item"><a class="portfolio-link" data-toggle="modal" href="#portfolioModal${i+1}"><div class="portfolio-hover">
 <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div></div>
-<img class="img-fluid" src="img/portfolio/${i}.300x400.png" alt=""></a><div class="portfolio-caption"><h4 ${i}>Mines Sweeper</h4>
+<img class="img-fluid" src="img/portfolio/${i}.300x400.png" alt=""></a><div class="portfolio-caption"><h4>${gProjects[i].name}</h4>
 <p class="text-muted ${i}">Get ready to explode your mind !</p></div></div>`;
     }
     strHTML += `</div></div></section>`;
