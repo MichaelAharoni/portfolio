@@ -1,10 +1,10 @@
 var gProjects;
-var gNames = ['MINES SWEEPER', 'Guess The Breed','Per Pixel'];
-var gTitles = ['Lets try to solve the whole board without any explotion !','Can you guess which breed of dog is it only by the picture ?','Whe your imagination became the reality'];
-var gDescs = ['This game have three lvls, each level have a diffrent numbers of bumbs, your targer is to solve all the board. Each box hides diffrent value which will appear only on click. you have 3 lives, 3 safe clicks, 3 hints. to restart press the Smiley Icon... GOOD LUCK !','try to guess all the breeds of dogs that appears in the game, we recommands to allow volume to have maximum effect, ENJOY !','Try to get your dream on paper, how exacly would it looks like? here you can see someone dream, on the exact same pxl, same color, became his reality.'];
+var gNames = ['MINES SWEEPER', 'Guess The Breed','Per Pixel','Touch The Number'];
+var gTitles = ['Lets try to solve the whole board without any explotion !','Can you guess which breed of dog is it only by the picture ?','When your imagination became the reality','Can you finish the whole board in less then 1 min?'];
+var gDescs = ['This game have three lvls, each level have a diffrent numbers of bumbs, your targer is to solve all the board. Each box hides diffrent value which will appear only on click. you have 3 lives, 3 safe clicks, 3 hints. to restart press the Smiley Icon... GOOD LUCK !','try to guess all the breeds of dogs that appears in the game, we recommands to allow volume to have maximum effect, ENJOY !','Try to get your dream on paper, how exacly would it looks like? here you can see someone dream, on the exact same pxl, same color, became his reality.','try to finish every lvl in less then 1 min. you have a timer that count from first click, the numbers ordered in random, your target is to touch from lowest to until the highest'];
 var gUrls = ['https://michaelaharoni.github.io/FirstProject/','https://michaelaharoni.github.io/guess-the-breed/','https://michaelaharoni.github.io/perPixel/','https://michaelaharoni.github.io/Touch-Nums/'];
-var gPublishedAts = ['1637754109000','464646433'];
-var gLabels = ['Game ,Matrixes', 'Dogs, Animals Games','site ,web'];
+var gPublishedAts = ['1637754109000','464646433','1637754109000'];
+var gLabels = ['Game ,Matrixes', 'Dogs, Animals Games','site ,web','numbers'];
 
 $(init);
 
